@@ -1,0 +1,734 @@
+body {
+  // overflow-x: hidden;
+  // @media (max-width: 768px) {
+  //   overflow-x: hidden;
+  // }
+}
+.header {
+  margin: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  @media (max-width: 768px) {
+    background-color: rgba(0, 0, 0, 0.6);
+    .navbar-brand {
+      width: 80%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .navbar-nav {
+    margin-left: 8%;
+    .true {
+      background: #ff7757;
+    }
+    .nav-item {
+      height: 100%;
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7rem;
+    border: 1px solid;
+    border-radius: 60px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.mySlides {
+  @media (max-width: 768px) {
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.slideshow-container {
+  position: relative;
+
+  display: flex;
+  .wrap {
+    position: relative;
+    width: 100%;
+    .card {
+      width: 40rem;
+      height: 20rem;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      margin-top: 20%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border-radius: 20px;
+      @media (max-width: 768px) {
+        width: 80%;
+      }
+      .card-body {
+        span {
+          color: #ff7757;
+          font-weight: 500;
+        }
+        input {
+          border: none;
+          border-color: white;
+          background: none;
+          width: 100%;
+          border-bottom: 1px solid white;
+          color: white;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .bi {
+          cursor: pointer;
+          border: 1px solid;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-weight: 700;
+          font-size: 20px;
+          color: #ff7757;
+        }
+        .col-6 {
+          width: 85%;
+        }
+
+        @media (max-width: 768px) {
+          .col-special {
+            width: 100%;
+          }
+          .col-1 {
+            display: none;
+          }
+        }
+        .row {
+          @media only screen and (max-width: 768px) {
+            display: block;
+            .col-6 {
+              width: 100%;
+            }
+          }
+        }
+        .wrapper {
+          justify-content: center;
+          align-items: center;
+          button {
+            background-color: #ff7757;
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+      .card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(18px + (50 - 18) * ((100vw - 300px) / (1920 - 300)));
+        font-family: "Dancing Script";
+      }
+      .card-subtitle {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .form-select {
+        background: none;
+        color: white;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        option {
+          color: black;
+        }
+      }
+      .input-select {
+        width: 100%;
+        background: none;
+        color: white;
+        border: none;
+        border-bottom: solid 1px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        option {
+          color: black;
+          @media only screen and (max-width: 768px) {
+            width: 50%;
+          }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        margin-top: 100%;
+      }
+    }
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 768px) {
+    .text {
+      font-size: 11px;
+    }
+  }
+  .slider-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-weight: 500;
+    text-align: right;
+    padding: 1rem;
+    width: 30rem;
+    @media (max-width: 768px) {
+      width: 100%;
+      h1 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.contain-wrap {
+  width: 100%;
+  height: 70vh;
+
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/vector/hoavan1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 768px) {
+    height: 100vh;
+  }
+  .discover {
+    .title {
+      text-align: center;
+      h4 {
+        margin-top: 30px;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #363636;
+        font-weight: 600;
+        span {
+          color: #ff7757;
+        }
+        p {
+          font-size: 22px;
+          color: #9a9a9a;
+          line-height: 28px;
+        }
+      }
+    }
+    .content {
+      width: 300vw;
+      height: 50vh;
+      display: flex;
+      transition: 0.7s;
+      @media (max-width:768px) {
+        width: 300vw;
+      }
+      .slide {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        gap: 2rem;
+        @media (max-width:768px) {
+          width: 400vw;
+          gap: 0;
+        }
+        .item {
+          position: relative;
+          .img {
+            img {
+              max-width: 100%;
+              object-fit: cover;
+              width: 200px;
+              height: 300px;
+              opacity: 1;
+              display: block;
+              transition: .5s ease;
+              backface-visibility: hidden;     
+              @media (max-width:768px) {
+                width: 100px;
+              }       
+            }
+          }
+          .text{
+            position: absolute;
+            bottom: 20%;
+            padding: 10px;
+            color: white;
+            font-weight: 500;
+            font-size: 22px;
+          }
+          .wrap{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: 50%;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            h4{
+              padding: 0 5px;
+              text-align: center;
+              margin-top: 1rem;
+            }
+            .desc{
+              color: black;
+              font-size: 16px;
+              padding: 0 5px;
+              text-align: center;
+            }
+            button{
+              padding: 5px;
+              margin: 0 25%;
+              background: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .item:hover .img{
+          opacity: 0.3;
+        }
+        .item:hover .wrap{
+          opacity: 1;
+        }
+      }
+    }
+    .next-prev-btn-discover {
+      width: 100%;
+      gap: 2rem;
+      display: flex;
+      justify-content: center;
+
+      .bi {
+        font-size: 35px;
+        cursor: pointer;
+        gap: 15px;
+      }
+    }
+  }
+  .im1 {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  #overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  .special-event {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://eticket.hueworldheritage.org.vn/images/bg-envent.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 768px) {
+      background-size: auto;
+    }
+    img {
+      object-fit: cover;
+      opacity: 0.6;
+    }
+    .content {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      margin-top: 2rem;
+      .title {
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        line-height: 1.2;
+        span {
+          color: #ff7757;
+        }
+      }
+      p {
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .row-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+        @media (max-width: 768px) {
+          display: block;
+          margin: 0;
+        }
+        .col1 {
+          @media (max-width: 768px) {
+            margin-top: 1rem;
+          }
+        }
+      }
+      .card {
+        @media (max-width: 768px) {
+          width: 90%;
+          margin: 0 5%;
+        }
+        width: 35rem;
+        p {
+          color: #cd4c2d;
+          text-align: left;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 500;
+        }
+        .card-body {
+          display: flex;
+          @media (max-width: 768px) {
+            display: block;
+          }
+          .bg-img {
+            width: 50%;
+            height: 10rem;
+            background-image: url("https://eticket.hueworldheritage.org.vn/images/event/Festval-Hue.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            @media (max-width: 768px) {
+              width: 100%;
+            }
+          }
+          .card-text {
+            @media (max-width: 768px) {
+              width: 100%;
+            }
+            width: 50%;
+            .happening {
+              background-color: rgba(255, 0, 0, 0.8);
+              font-weight: 500;
+              border-radius: 0px 4px 4px 0px;
+              color: #fff;
+              font-size: 18px;
+              padding: 8px 15px;
+              display: inline-block;
+              cursor: pointer;
+              @media (max-width: 768px) {
+                position: absolute;
+                top: 0;
+                margin-top: 1rem;
+              }
+            }
+            .description {
+              padding-left: 30px;
+              margin-top: 1rem;
+              @media (max-width: 768px) {
+                padding: 0;
+              }
+              p {
+                font-size: 22px;
+              }
+              span {
+                color: #cd4c2d;
+                font-size: 22px;
+                line-height: 24px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .categories {
+    width: 100%;
+    height: 80vh;
+    @media (max-width: 768px) {
+      overflow-x: hidden;
+    }
+    .content {
+      .title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #363636;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 2rem;
+        span {
+          color: #ff7757;
+        }
+      }
+      .title-2 {
+        font-size: 22px;
+        color: #9a9a9a;
+        line-height: 28px;
+        text-align: center;
+      }
+      .service-container {
+        display: flex;
+        margin: 0 10%;
+        transition: 0.7s;
+        @media (max-width: 768px) {
+          margin: 0;
+          width: 100vw;
+        }
+        @media (min-width: 768px) {
+          transform: translate(
+            0
+          ); /* Reset the transform property for desktop */
+        }
+        i {
+          width: 100%;
+        }
+        .bi {
+          font-size: 25px;
+          display: flex;
+          justify-content: center;
+          color: #cd4c2d;
+        }
+        .bg-img-1 {
+          background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service1.png");
+          width: 100%;
+          height: 233px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @media (max-width: 768px) {
+            width: 100vw;
+          }
+        }
+        .bg-img-2 {
+          background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service2.png");
+          width: 100%;
+          height: 233px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @media (max-width: 768px) {
+            width: 100vw;
+          }
+        }
+        .bg-img-3 {
+          background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service3.png");
+          width: 100%;
+          height: 233px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @media (max-width: 768px) {
+            width: 100vw;
+          }
+        }
+        .bg-img-4 {
+          background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service4.png");
+          width: 100%;
+          height: 233px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @media (max-width: 768px) {
+            width: 100vw;
+          }
+        }
+        .text {
+          padding: 15px;
+          height: 233px;
+          background-color: #f8f8f8;
+          text-align: center;
+          span {
+            color: #cd4c2d;
+            margin: 20px 0;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+          }
+          p {
+            height: 50%;
+            text-align: center;
+            overflow: hidden; /* Ẩn phần vượt quá chiều cao tối đa */
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .next-prev-btn {
+        width: 100%;
+        gap: 2rem;
+        display: none;
+        justify-content: center;
+        @media (max-width: 768px) {
+          display: flex;
+        }
+        .bi {
+          font-size: 35px;
+          cursor: pointer;
+          gap: 15px;
+        }
+      }
+    }
+  }
+  .adv-container {
+    display: flex;
+    gap: 30px;
+    margin: 10%;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .help {
+    background-color: #76381e;
+    .wrap {
+      display: flex;
+      margin: 0 10%;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    .text {
+      text-align: left;
+      margin-bottom: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      h2 {
+        color: white;
+        font-weight: 500 !important;
+        font-size: 30px;
+      }
+      p {
+        color: #ffd6a6;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+    .img {
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+        border-style: none;
+      }
+    }
+  }
+  .footer {
+    background-image: url("https://eticket.hueworldheritage.org.vn/images/vector/bg-section-5.png");
+    width: 100%;
+
+    .wrapper {
+      display: block;
+      .wrap {
+        display: flex;
+        gap: 15px;
+        margin: 0 10%;
+        padding: 3rem 0;
+        @media (max-width: 768px) {
+          display: block;
+        }
+        .item {
+          display: block;
+          width: 25%;
+          line-height: 2rem;
+          @media (max-width: 768px) {
+            width: 100% !important;
+          }
+          .wrap-inside {
+            margin-top: 1rem;
+            margin-left: 2rem;
+          }
+          p {
+            color: #363636;
+            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            color: #cd4c2d;
+          }
+          img {
+            max-width: 100%;
+          }
+          .icon {
+            display: flex;
+            gap: 10px;
+            color: #cd4c2d;
+          }
+        }
+      }
+      .footer-bottom {
+        border-top: 1px solid #d9d9d9;
+        margin-top: 16px;
+        padding-top: 10px;
+        margin: 0 10%;
+        .col-9 {
+          margin-bottom: 0;
+          color: #363636;
+          line-height: 1.8;
+          font-size: 18px;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+        .col-3 {
+          text-align: right;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          img {
+            max-width: 100%;
+            max-height: 44px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light header position-absolute">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://eticket.hueworldheritage.org.vn/images/logo.svg"
+            alt=""
+        /></a>
+        <!-- responsive navbar button for menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item true">
+              <a class="nav-link active" aria-current="page" href="#"
+                >TRANG CHỦ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MUA VÉ</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">ĐẶT VÉ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                THÔNG TIN
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SỰ KIỆN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">THỐNG KÊ</a>
+            </li>
+          </ul>
+          <form class="d-flex icon">
+            <i
+              class="bi bi-cart-fill"
+              style="font-size: 20px; cursor: pointer; color: red"
+            ></i>
+            <img
+              width="20px"
+              src="https://eticket.hueworldheritage.org.vn/images/icon/vi-VN.png"
+              style="cursor: pointer"
+              alt=""
+            />
+            <i
+              class="bi bi-person-fill"
+              style="font-size: 20px; cursor: pointe; color: white"
+            ></i>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="slideshow-container">
+      <div class="wrap position-absolute" style="width: 100%">
+        <div class="card d-flex">
+          <div class="card-body">
+            <h5 class="card-title">Chào mừng đến với Huế!</h5>
+            <h6 class="card-subtitle mb-2">
+              Đặt vé tham quan trực tuyến thuận tiện, nhanh chóng.
+            </h6>
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-6">
+                <span>Điểm tham quan</span>
+                <form>
+                  <select class="input-select">
+                    <option value="1">Đại nội Huế/Hue imperial City</option>
+                    <option value="2">Lăng Vua Tự Đức</option>
+                    <option value="3">Lăng Vua Minh Mạng</option>
+                    <option value="4">Lăng Vua Khải Định</option>
+                    <option value="5">Lăng Vua Gia Long</option>
+                    <option value="6">Lăng Vua Thiệu Trị</option>
+                    <option value="7">Lăng Vua Đồng Khánh</option>
+                  </select>
+                </form>
+              </div>
+              <div class="col-1"></div>
+            </div>
+            <div class="row mt-3 special">
+              <div class="col-1"></div>
+              <div class="col-5 col-special">
+                <span>Người lớn</span>
+                <div class="d-flex">
+                  <i class="bi bi-dash"></i>
+                  <input class="" type="number" value="0" />
+                  <i class="bi bi-plus"></i>
+                </div>
+              </div>
+              <div class="col-5 col-special">
+                <span>Trẻ em(Từ 7-12 tuổi)</span>
+                <div class="d-flex">
+                  <i class="bi bi-dash"></i>
+                  <input class="" type="number" value="0" />
+                  <i class="bi bi-plus"></i>
+                </div>
+              </div>
+              <div class="col-1"></div>
+            </div>
+            <br />
+            <div class="wrapper d-flex" style="width: 100%">
+              <button type="button" class="btn">MUA VÉ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://c1.wallpaperflare.com/preview/720/823/629/vietnam-hue-palace-royal-palace.jpg"
+          style="width: 100vw; height: 100vh"
+        />
+        <div class="slider-content position-absolute" style="z-index: 999">
+          <h1>Đại nội Huế</h1>
+          <p>
+            Bia Quốc Học tọa lạc giữa một ngoại cảnh thiên nhiên thơ mộng, nhất
+            là phía sau có dòng sông Hương trong xanh êm ả, giữa một không gian
+            kiến trúc độc đáo.
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://i.pinimg.com/originals/a8/d8/1e/a8d81edcabe5391c6e5c79a80dc4c493.jpg"
+          style="width: 100vw; height: 100vh"
+        />
+        <div class="slider-content position-absolute" style="z-index: 999">
+          <h1>Đại nội Huế</h1>
+          <p>
+            Người ta đến Huế không chỉ thưởng thức những cảnh đẹp lãng mạn, thơ
+            mộng mà nơi đây còn lưu giữ vết tích Đại Nội Huế, chốn cung đình xưa
+            cũ của triều đại nhà Nguyễn ở Việt Nam..
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://c1.wallpaperflare.com/preview/615/919/770/hue-vietnam-asia-palace-unesco-building.jpg"
+          style="width: 100vw; height: 100vh"
+        />
+        <div class="slider-content position-absolute" style="z-index: 999">
+          <h1>Bia quốc học</h1>
+          <p>
+            Bia Quốc Học tọa lạc giữa một ngoại cảnh thiên nhiên thơ mộng, nhất
+            là phía sau có dòng sông Hương trong xanh êm ả, giữa một không gian
+            kiến trúc độc đáo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Contain -->
+    <div class="contain-wrap">
+      <!-- <div class="discovery-DS">
+        <img src="https://eticket.hueworldheritage.org.vn/images/vector/bg-section-1.png"  alt="">
+        <img src="https://eticket.hueworldheritage.org.vn/images/vector/hoavan1.png" class="im1" alt="">
+      </div> -->
+      <div class="discover">
+        <div class="title">
+          <h4>KHÁM PHÁ <span>DI SẢN</span></h4>
+          <p>Huế là vùng đất được mệnh danh là xứ sở của di sản, được UNESCO vinh danh.</p>
+        </div>
+        <div class="content">
+          <div class="slide">
+            <div class="item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/NgoMon2.jpg" alt="">
+              </div>
+              <div class="text">ĐẠI NỘI</div>
+              <div class="wrap">
+                <h4>ĐẠI NỘI</h4>
+                <div class="desc">Hoàng thành Huế hay Thuận Hóa hoàng thành hay còn được gọi là Đại Nội, là vòng thành thứ hai bên ...</div>
+                <button>Xem chi tiết</button>
+              </div>
+            </div>
+            <div class="item special-item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/NgoMon3.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/NgoMon4.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item special-item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/NgoMon5.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="item special-item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/CuaHienNhon.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/LangTuDuc4.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item special-item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/NgoMon6.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/CungDienTho.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/DienThaiHoa.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item special-item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/LauNguPhung.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/LangTuDuc5.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+            <div class="item special-item">
+              <div class="img">
+                <img src="https://eticket.hueworldheritage.org.vn/upload/images/LangTuDuc3.jpg" alt="">
+              </div>
+              <div class="text"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="next-prev-btn-discover">
+          <i class="bi bi-arrow-left-short"></i>
+          <i class="bi bi-arrow-right-short"></i>
+        </div>
+      </div>
+      <div
+        id="overlay"
+        class="overlay position-absolute w-100 pointer-event opacity-3"
+      ></div>
+      <div class="special-event">
+        <!-- <img
+          src="https://eticket.hueworldheritage.org.vn/images/bg-envent.png"
+          width="100%"
+          alt=""
+        /> -->
+        <div class="content">
+          <div class="title">SỰ KIỆN <span>NỔI BẬT</span></div>
+          <p>
+            Các sự kiện nổi bật hấp dẫn diễn ra trong năm 2022 tại cố đô Huế
+          </p>
+          <div class="row-content">
+            <div class="col1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="bg-img"></div>
+                  <div class="card-text">
+                    <div class="happening">Đang diễn ra</div>
+                    <div class="description">
+                      <span>
+                        Festival Huế 2022 - Di sản văn hóa với hội nhập và phát
+                        triển
+                      </span>
+                      <div>
+                        <i class="bi bi-calendar-day-fill"></i>Từ 25/06/2022 Đến
+                        30/06/2022
+                      </div>
+                      <div>
+                        <i class="bi bi-geo-alt-fill"></i>Tỉnh Thừa Thiên Huế
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="bg-img"></div>
+                  <div class="card-text">
+                    <div class="happening">Đang diễn ra</div>
+                    <div class="description">
+                      <span>
+                        Festival Huế 2022 - Di sản văn hóa với hội nhập và phát
+                        triển
+                      </span>
+                      <div>
+                        <i class="bi bi-calendar-day-fill"></i>Từ 25/06/2022 Đến
+                        30/06/2022
+                      </div>
+                      <div>
+                        <i class="bi bi-geo-alt-fill"></i>Tỉnh Thừa Thiên Huế
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="categories">
+        <div class="content">
+          <div class="title">CÁC LOẠI HÌNH <span>DỊCH VỤ</span></div>
+          <p class="title-2">
+            Hỗ trợ cho du khách trải nghiệm các dịch vụ và tiện ích khi tham
+            quan các điểm di tích ở Huế.
+          </p>
+
+          <div class="service-container">
+            <div class="item-ser">
+              <div class="bg-img-1"></div>
+              <div class="text">
+                <i class="bi bi-headset-vr"></i>
+                <br />
+                <span>TRẢI NGHIỆM THỰC TẾ ẢO VR</span>
+                <p>
+                  Những hình ảnh của kinh thành thời Nguyễn được hiện ra đầy đủ,
+                  rõ nét sinh động cùng với những hoạt động, nghi thức hàng ngày
+                  trong hoàng cung hàng trăm năm trước.
+                </p>
+              </div>
+            </div>
+            <div class="item-ser">
+              <div class="text">
+                <i class="bi bi-file-music-fill"></i>
+                <br />
+                <span>AUTO GUIDE</span>
+                <p>
+                  Dịch vụ thuyết minh tự động (Audio guide) là ứng dụng công
+                  nghệ điện tử hỗ trợ tự động hóa việc thuyết minh cho khách
+                  tham quan, nhất là khách lẻ quốc tế và khách sử dụng ngôn ngữ
+                  hiếm.
+                </p>
+              </div>
+              <div class="bg-img-2"></div>
+            </div>
+            <div class="item-ser">
+              <div class="bg-img-3"></div>
+              <div class="text">
+                <i class="bi bi-ev-front-fill"></i>
+                <br />
+                <span>XE ĐIỆN</span>
+                <p>
+                  Để tạo điều kiện cho du khách có cơ hội tham quan khu vực xung
+                  quanh Đại Nội và tất cả các điểm du lịch bên trong Đại Nội mà
+                  không mất nhiều thời gian.
+                </p>
+              </div>
+            </div>
+            <div class="item-ser">
+              <div class="text">
+                <i class="bi bi-camera"></i>
+                <br />
+                <span>CHỤP ẢNH CỔ TRANG</span>
+                <p>
+                  Bên trong Hoàng cung Huế có tổ chức chụp ảnh lưu niệm cho du
+                  khách tham quan dưới trang phục thái thượng hoàng, vua, hoàng
+                  hậu, công chúa, hoàng tử và cung phi.
+                </p>
+              </div>
+              <div class="bg-img-4"></div>
+            </div>
+          </div>
+          <div class="next-prev-btn">
+            <i class="bi bi-arrow-left "></i>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="adv-container">
+        <div class="adv-item">
+          <img
+            src="https://eticket.hueworldheritage.org.vn/images/adv/adv1.png"
+            alt=""
+          />
+        </div>
+        <div class="adv-item">
+          <img
+            src="https://eticket.hueworldheritage.org.vn/images/adv/adv2.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="help">
+        <div class="wrap">
+          <div class="text">
+            <h2>Tư vấn chuyên nghiệp, tận tình</h2>
+            <p>
+              Với đội ngũ nhân viên nhiều kinh nghiệm, am hiểu các điểm đến
+              chúng tôi luôn sẵn sàng hỗ trợ và tư vấn mọi thông tin liên quan
+              đến nhu cầu du lịch, tham quan của Quý khách!
+            </p>
+          </div>
+          <div class="img">
+            <img
+              src="https://eticket.hueworldheritage.org.vn/images/icon/hotline.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="wrapper">
+          <div class="wrap">
+            <div class="item">
+              <img
+                src="https://eticket.hueworldheritage.org.vn/images/logofooter.png"
+                alt=""
+              />
+              <div class="wrap-inside">
+                <p>Liên kết với chúng tôi</p>
+                <div class="icon">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-youtube"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <p>Liên kết</p>
+              <a href="#">Khám phá Huế</a><br />
+              <a href="#">Visit Huế</a><br />
+              <a href="#">Cổng TTBTDT Cố đô Huế</a>
+            </div>
+            <div class="item">
+              <p>Điều khoản sử dụng</p>
+              <a href="#">Điều khoảng chung</a>
+            </div>
+            <div class="item">
+              <p>Thông tin</p>
+              <a href="#">Chương trình khuyến mãi</a><br />
+              <a href="#">Thời gian/Nội quy tham quan</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row">
+              <div class="col-9">
+                <p>
+                  Bản quyền Website thuộc về Trung tâm Bảo tồn Di tích Cố đô
+                  Huế<br />Địa chỉ: Tam Toà, 23 Tống Duy Tân - thành phố Huế,
+                  Việt Nam<br />Email: huedisan@gmail.com
+                </p>
+              </div>
+              <div class="col-3">
+                <img src="https://eticket.hueworldheritage.org.vn/images/logobct.png" alt="">
+                <div class="copyright">Thiết kế và xây dựng: HueCIT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/script2.js"></script>
+  </body>
+</html>

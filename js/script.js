@@ -139,3 +139,23 @@ document.querySelector(".btn2-right").addEventListener("click", function() {
   wrap_2.style.transform = "translateX(" + position_2 + "px)";
 
 });
+
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+
+function increment(type) {
+  var inputElement = document.getElementById(type + 'Input');
+  inputElement.value = parseInt(inputElement.value) + 1;
+}
+
+function decrement(type) {
+  var inputElement = document.getElementById(type + 'Input');
+  if (parseInt(inputElement.value) > 0) {
+    inputElement.value = parseInt(inputElement.value) - 1;
+  }
+}

@@ -304,6 +304,7 @@ body {
   .discover {
     @media (max-width: 768px) {
       overflow: hidden;
+      
     }
     .title {
       text-align: center;
@@ -456,6 +457,7 @@ body {
       justify-content: center;
       @media (max-width: 768px) {
         display: flex;
+        margin-top: 20%;
       }
       .bi {
         font-size: 35px;
@@ -491,6 +493,7 @@ body {
     background-size: cover;
     @media (max-width: 768px) {
       background-size: auto;
+      height: 130vh;
     }
     img {
       object-fit: cover;
@@ -607,6 +610,8 @@ body {
     height: 80vh;
     @media (max-width: 768px) {
       overflow-x: hidden;
+      height: 120vh;
+      margin-top: 10%;
     }
     .content {
       .title {

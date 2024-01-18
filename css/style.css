@@ -478,6 +478,7 @@ body {
 @media (max-width: 768px) {
   .contain-wrap .discover .next-prev-btn-discover-2 {
     display: flex;
+    margin-top: 20%;
   }
 }
 .contain-wrap .discover .next-prev-btn-discover-2 .bi {
@@ -511,6 +512,7 @@ body {
 @media (max-width: 768px) {
   .contain-wrap .special-event {
     background-size: auto;
+    height: 130vh;
   }
 }
 .contain-wrap .special-event img {
@@ -644,6 +646,8 @@ body {
 @media (max-width: 768px) {
   .contain-wrap .categories {
     overflow-x: hidden;
+    height: 120vh;
+    margin-top: 10%;
   }
 }
 .contain-wrap .categories .content .title {

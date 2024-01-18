@@ -1,8 +1,7 @@
 body {
-  // overflow-x: hidden;
-  // @media (max-width: 768px) {
-  //   overflow-x: hidden;
-  // }
+  overflow-x: hidden;
+  @media (max-width: 768px) {
+  }
 }
 .header {
   margin: 0;
@@ -225,7 +224,7 @@ body {
 .contain-wrap {
   width: 100%;
   height: 70vh;
-
+  position: absolute;
   background-image: url("https://eticket.hueworldheritage.org.vn/images/vector/hoavan1.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -233,6 +232,9 @@ body {
     height: 100vh;
   }
   .discover {
+    @media (max-width: 768px) {
+      overflow: hidden;
+    }
     .title {
       text-align: center;
       h4 {
@@ -258,20 +260,28 @@ body {
       height: 50vh;
       display: flex;
       transition: 0.7s;
-      @media (max-width:768px) {
-        width: 300vw;
+      @media (max-width: 768px) {
+        width: 100vw;
+        height: 40vh;
       }
       .slide {
         display: flex;
         width: 100vw;
         justify-content: center;
         gap: 2rem;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
+          display: flex;
+          justify-content: start;
           width: 400vw;
           gap: 0;
+          transition: 0.7s;
+          height: 50vh;
         }
         .item {
           position: relative;
+          @media (max-width: 768px) {
+            width: 100vw;
+          }
           .img {
             img {
               max-width: 100%;
@@ -280,14 +290,27 @@ body {
               height: 300px;
               opacity: 1;
               display: block;
-              transition: .5s ease;
-              backface-visibility: hidden;     
-              @media (max-width:768px) {
-                width: 100px;
-              }       
+              transition: 0.5s ease;
+              backface-visibility: hidden;
+              @media (max-width: 768px) {
+                width: 100%;
+              }
             }
           }
-          .text{
+          .bd {
+            position: absolute;
+            border: 2px solid grey;
+            width: 200px;
+            height: 300px;
+            top: 0;
+            margin-top: 5%;
+            margin-left: 5%;
+            z-index: -1;
+            @media (max-width:768px) {
+              display: none;
+            }
+          }
+          .text {
             position: absolute;
             bottom: 20%;
             padding: 10px;
@@ -295,8 +318,8 @@ body {
             font-weight: 500;
             font-size: 22px;
           }
-          .wrap{
-            transition: .5s ease;
+          .wrap {
+            transition: 0.5s ease;
             opacity: 0;
             position: absolute;
             width: 100%;
@@ -306,29 +329,37 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-            h4{
+            @media (max-width: 768px) {
+              margin-top: 0;
+              height: 0;
+            }
+            h4 {
               padding: 0 5px;
               text-align: center;
               margin-top: 1rem;
             }
-            .desc{
+            .desc {
               color: black;
               font-size: 16px;
               padding: 0 5px;
               text-align: center;
             }
-            button{
+            button {
               padding: 5px;
               margin: 0 25%;
               background: none;
               cursor: pointer;
+              @media (max-width: 768px) {
+                margin: 0 25%;
+                width: 50%;
+              }
             }
           }
         }
-        .item:hover .img{
+        .item:hover .img {
           opacity: 0.3;
         }
-        .item:hover .wrap{
+        .item:hover .wrap {
           opacity: 1;
         }
       }
@@ -339,6 +370,23 @@ body {
       display: flex;
       justify-content: center;
 
+      @media (max-width: 768px) {
+        display: none;
+      }
+      .bi {
+        font-size: 35px;
+        cursor: pointer;
+        gap: 15px;
+      }
+    }
+    .next-prev-btn-discover-2 {
+      width: 100%;
+      gap: 2rem;
+      display: none;
+      justify-content: center;
+      @media (max-width: 768px) {
+        display: flex;
+      }
       .bi {
         font-size: 35px;
         cursor: pointer;

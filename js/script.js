@@ -84,17 +84,58 @@ function showSlide_1(elem, pix, n) {
   elem.style.transform = "translateX(" + position_1 + "px)";
 }
 
-document.querySelector(".bi-arrow-left-short").addEventListener("click", function() {
+document.querySelector(".btn1-left").addEventListener("click", function() {
   const prevIndex = currentDot_1 === 0 ? items_1.length - 1 : currentDot_1 - 1;
   position_1 = -items_1[prevIndex].clientWidth * prevIndex;
   currentDot_1 = prevIndex;
   wrap_1.style.transform = "translateX(" + position_1 + "px)";
 });
 
-document.querySelector(".bi-arrow-right-short").addEventListener("click", function() {
+document.querySelector(".btn1-right").addEventListener("click", function() {
   const nextIndex = currentDot_1 === items_1.length - 1 ? 0 : currentDot_1 + 1;
   position_1 = -items_1[nextIndex].clientWidth * nextIndex;
   currentDot_1 = nextIndex;
   wrap_1.style.transform = "translateX(" + position_1 + "px)";
+
+});
+
+
+//
+let wrap_2 = document.querySelector(".content"),
+    itemWidth_2 = document.querySelectorAll(".item")[0].clientWidth;
+
+let items_2 = document.querySelectorAll(".item");
+
+let position_2 = 0;
+let currentDot_2 = 0;
+
+showSlide_2(wrap_2, 0, 0);
+
+function showSlide_2(elem, pix, n) {
+  position_2 += pix;
+  currentDot_2 += n;
+
+  if (position_2 > 0) { 
+    position_2 = -elem.clientWidth + pix;
+    currentDot_2 = items_2.length - 1;
+  } else if (position_2 < -elem.clientWidth - pix) {
+    position_2 = 0;
+    currentDot_2 = 0;
+  }
+  elem.style.transform = "translateX(" + position_2 + "px)";
+}
+
+document.querySelector(".btn2-left").addEventListener("click", function() {
+  const prevIndex = currentDot_2 === 0 ? items_2.length - 1 : currentDot_2 - 1;
+  position_2 = -items_2[prevIndex].clientWidth * prevIndex;
+  currentDot_2 = prevIndex;
+  wrap_2.style.transform = "translateX(" + position_2 + "px)";
+});
+
+document.querySelector(".btn2-right").addEventListener("click", function() {
+  const nextIndex = currentDot_2 === items_2.length - 1 ? 0 : currentDot_2 + 1;
+  position_2 = -items_2[nextIndex].clientWidth * nextIndex;
+  currentDot_2 = nextIndex;
+  wrap_2.style.transform = "translateX(" + position_2 + "px)";
 
 });

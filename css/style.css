@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
 .header {
   margin: 0;
   width: 100%;
@@ -223,6 +226,7 @@
 .contain-wrap {
   width: 100%;
   height: 70vh;
+  position: absolute;
   background-image: url("https://eticket.hueworldheritage.org.vn/images/vector/hoavan1.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -230,6 +234,11 @@
 @media (max-width: 768px) {
   .contain-wrap {
     height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover {
+    overflow: hidden;
   }
 }
 .contain-wrap .discover .title {
@@ -260,7 +269,8 @@
 }
 @media (max-width: 768px) {
   .contain-wrap .discover .content {
-    width: 300vw;
+    width: 100vw;
+    height: 40vh;
   }
 }
 .contain-wrap .discover .content .slide {
@@ -271,12 +281,21 @@
 }
 @media (max-width: 768px) {
   .contain-wrap .discover .content .slide {
+    display: flex;
+    justify-content: start;
     width: 400vw;
     gap: 0;
+    transition: 0.7s;
+    height: 50vh;
   }
 }
 .contain-wrap .discover .content .slide .item {
   position: relative;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item {
+    width: 100vw;
+  }
 }
 .contain-wrap .discover .content .slide .item .img img {
   max-width: 100%;
@@ -291,7 +310,22 @@
 }
 @media (max-width: 768px) {
   .contain-wrap .discover .content .slide .item .img img {
-    width: 100px;
+    width: 100%;
+  }
+}
+.contain-wrap .discover .content .slide .item .bd {
+  position: absolute;
+  border: 2px solid grey;
+  width: 200px;
+  height: 300px;
+  top: 0;
+  margin-top: 5%;
+  margin-left: 5%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .bd {
+    display: none;
   }
 }
 .contain-wrap .discover .content .slide .item .text {
@@ -314,6 +348,12 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .wrap {
+    margin-top: 0;
+    height: 0;
+  }
+}
 .contain-wrap .discover .content .slide .item .wrap h4 {
   padding: 0 5px;
   text-align: center;
@@ -331,6 +371,12 @@
   background: none;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .wrap button {
+    margin: 0 25%;
+    width: 50%;
+  }
+}
 .contain-wrap .discover .content .slide .item:hover .img {
   opacity: 0.3;
 }
@@ -343,7 +389,28 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .contain-wrap .discover .next-prev-btn-discover {
+    display: none;
+  }
+}
 .contain-wrap .discover .next-prev-btn-discover .bi {
+  font-size: 35px;
+  cursor: pointer;
+  gap: 15px;
+}
+.contain-wrap .discover .next-prev-btn-discover-2 {
+  width: 100%;
+  gap: 2rem;
+  display: none;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .next-prev-btn-discover-2 {
+    display: flex;
+  }
+}
+.contain-wrap .discover .next-prev-btn-discover-2 .bi {
   font-size: 35px;
   cursor: pointer;
   gap: 15px;

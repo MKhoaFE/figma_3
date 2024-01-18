@@ -1,0 +1,909 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+.header {
+  margin: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+@media (max-width: 768px) {
+  .header {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .header .navbar-brand {
+    width: 80%;
+  }
+  .header .navbar-brand img {
+    width: 100%;
+  }
+}
+.header .sidenav {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header .sidenav {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    transition: 0.5s;
+    transform: rotateX("angle");
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+  .header .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .header .sidenav .head {
+    justify-content: space-between;
+    padding: 8px 8px 8px 32px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  .header .sidenav .head .wrap button {
+    font-size: 18px;
+    border: none;
+    background: none;
+  }
+  .header .sidenav i {
+    font-size: 39px;
+  }
+  .header .sidenav .active {
+    color: #ff7757;
+  }
+  .header .sidenav a {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+  }
+  .header .sidenav a:hover {
+    color: #9d9999;
+  }
+}
+.header .navbar-nav {
+  margin-left: 8%;
+}
+.header .navbar-nav .true {
+  background: #ff7757;
+}
+.header .navbar-nav .nav-item {
+  height: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7rem;
+  border: 1px solid;
+  border-radius: 60px;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 768px) {
+  .header .icon {
+    justify-content: end;
+    font-size: 16px;
+    gap: 15px;
+    align-items: center;
+    background: none;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mySlides img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  display: flex;
+  /* On smaller screens, decrease text size */
+}
+.slideshow-container .wrap {
+  position: relative;
+  width: 100%;
+}
+.slideshow-container .wrap .card {
+  width: 40rem;
+  height: 20rem;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-top: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .slideshow-container .wrap .card {
+    width: 80%;
+  }
+}
+.slideshow-container .wrap .card .card-body span {
+  color: #ff7757;
+  font-weight: 500;
+}
+.slideshow-container .wrap .card .card-body input {
+  border: none;
+  border-color: white;
+  background: none;
+  width: 100%;
+  border-bottom: 1px solid white;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slideshow-container .wrap .card .card-body .bi {
+  cursor: pointer;
+  border: 1px solid;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ff7757;
+}
+.slideshow-container .wrap .card .card-body .col-6 {
+  width: 85%;
+}
+@media (max-width: 768px) {
+  .slideshow-container .wrap .card .card-body .col-special {
+    width: 100%;
+  }
+  .slideshow-container .wrap .card .card-body .col-1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slideshow-container .wrap .card .card-body .row {
+    display: block;
+  }
+  .slideshow-container .wrap .card .card-body .row .col-6 {
+    width: 100%;
+  }
+}
+.slideshow-container .wrap .card .card-body .wrapper {
+  justify-content: center;
+  align-items: center;
+}
+.slideshow-container .wrap .card .card-body .wrapper button {
+  background-color: #ff7757;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+.slideshow-container .wrap .card .card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(18px + 32 * (100vw - 300px) / 1620);
+  font-family: "Dancing Script";
+}
+.slideshow-container .wrap .card .card-subtitle {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.slideshow-container .wrap .card .form-select {
+  background: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .slideshow-container .wrap .card .form-select {
+    width: 100%;
+  }
+}
+.slideshow-container .wrap .card .form-select option {
+  color: black;
+}
+.slideshow-container .wrap .card .input-select {
+  width: 100%;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: solid 1px;
+}
+@media only screen and (max-width: 768px) {
+  .slideshow-container .wrap .card .input-select {
+    width: 100%;
+  }
+}
+.slideshow-container .wrap .card .input-select option {
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .slideshow-container .wrap .card .input-select option {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slideshow-container .wrap .card {
+    margin-top: 100%;
+  }
+}
+.slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slideshow-container .text {
+    font-size: 11px;
+  }
+}
+.slideshow-container .slider-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  padding: 1rem;
+  width: 30rem;
+}
+@media (max-width: 768px) {
+  .slideshow-container .slider-content {
+    width: 100%;
+  }
+  .slideshow-container .slider-content h1 {
+    font-size: 14px;
+  }
+  .slideshow-container .slider-content p {
+    font-size: 11px;
+  }
+}
+
+.contain-wrap {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/vector/hoavan1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 768px) {
+  .contain-wrap {
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover {
+    overflow: hidden;
+  }
+}
+.contain-wrap .discover .title {
+  text-align: center;
+}
+.contain-wrap .discover .title h4 {
+  margin-top: 30px;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #363636;
+  font-weight: 600;
+}
+.contain-wrap .discover .title h4 span {
+  color: #ff7757;
+}
+.contain-wrap .discover .title h4 p {
+  font-size: 22px;
+  color: #9a9a9a;
+  line-height: 28px;
+}
+.contain-wrap .discover .content {
+  width: 300vw;
+  height: 50vh;
+  display: flex;
+  transition: 0.7s;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+.contain-wrap .discover .content .slide {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide {
+    display: flex;
+    justify-content: start;
+    width: 400vw;
+    gap: 0;
+    transition: 0.7s;
+    height: 50vh;
+  }
+}
+.contain-wrap .discover .content .slide .item {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item {
+    width: 100vw;
+  }
+}
+.contain-wrap .discover .content .slide .item .img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 300px;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .img img {
+    width: 100%;
+  }
+}
+.contain-wrap .discover .content .slide .item .bd {
+  position: absolute;
+  border: 2px solid grey;
+  width: 200px;
+  height: 300px;
+  top: 0;
+  margin-top: 5%;
+  margin-left: 5%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .bd {
+    display: none;
+  }
+}
+.contain-wrap .discover .content .slide .item .text {
+  position: absolute;
+  bottom: 20%;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+.contain-wrap .discover .content .slide .item .wrap {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 50%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .wrap {
+    margin-top: 0;
+    height: 0;
+  }
+}
+.contain-wrap .discover .content .slide .item .wrap h4 {
+  padding: 0 5px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.contain-wrap .discover .content .slide .item .wrap .desc {
+  color: black;
+  font-size: 16px;
+  padding: 0 5px;
+  text-align: center;
+}
+.contain-wrap .discover .content .slide .item .wrap button {
+  padding: 5px;
+  margin: 0 25%;
+  background: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .content .slide .item .wrap button {
+    margin: 0 25%;
+    width: 50%;
+  }
+}
+.contain-wrap .discover .content .slide .item:hover .img {
+  opacity: 0.3;
+}
+.contain-wrap .discover .content .slide .item:hover .wrap {
+  opacity: 1;
+}
+.contain-wrap .discover .next-prev-btn-discover {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .next-prev-btn-discover {
+    display: none;
+  }
+}
+.contain-wrap .discover .next-prev-btn-discover .bi {
+  font-size: 35px;
+  cursor: pointer;
+  gap: 15px;
+}
+.contain-wrap .discover .next-prev-btn-discover-2 {
+  width: 100%;
+  gap: 2rem;
+  display: none;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contain-wrap .discover .next-prev-btn-discover-2 {
+    display: flex;
+  }
+}
+.contain-wrap .discover .next-prev-btn-discover-2 .bi {
+  font-size: 35px;
+  cursor: pointer;
+  gap: 15px;
+}
+.contain-wrap .im1 {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.contain-wrap #overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.contain-wrap .special-event {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/bg-envent.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event {
+    background-size: auto;
+  }
+}
+.contain-wrap .special-event img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+}
+.contain-wrap .special-event .content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin-top: 2rem;
+}
+.contain-wrap .special-event .content .title {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  line-height: 1.2;
+}
+.contain-wrap .special-event .content .title span {
+  color: #ff7757;
+}
+.contain-wrap .special-event .content p {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contain-wrap .special-event .content .row-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .row-content {
+    display: block;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .row-content .col1 {
+    margin-top: 1rem;
+  }
+}
+.contain-wrap .special-event .content .card {
+  width: 35rem;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .card {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+.contain-wrap .special-event .content .card p {
+  color: #cd4c2d;
+  text-align: left;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.contain-wrap .special-event .content .card .card-body {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .card .card-body {
+    display: block;
+  }
+}
+.contain-wrap .special-event .content .card .card-body .bg-img {
+  width: 50%;
+  height: 10rem;
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/event/Festval-Hue.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .card .card-body .bg-img {
+    width: 100%;
+  }
+}
+.contain-wrap .special-event .content .card .card-body .card-text {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .card .card-body .card-text {
+    width: 100%;
+  }
+}
+.contain-wrap .special-event .content .card .card-body .card-text .happening {
+  background-color: rgba(255, 0, 0, 0.8);
+  font-weight: 500;
+  border-radius: 0px 4px 4px 0px;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .card .card-body .card-text .happening {
+    position: absolute;
+    top: 0;
+    margin-top: 1rem;
+  }
+}
+.contain-wrap .special-event .content .card .card-body .card-text .description {
+  padding-left: 30px;
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .contain-wrap .special-event .content .card .card-body .card-text .description {
+    padding: 0;
+  }
+}
+.contain-wrap .special-event .content .card .card-body .card-text .description p {
+  font-size: 22px;
+}
+.contain-wrap .special-event .content .card .card-body .card-text .description span {
+  color: #cd4c2d;
+  font-size: 22px;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contain-wrap .categories {
+  width: 100%;
+  height: 80vh;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories {
+    overflow-x: hidden;
+  }
+}
+.contain-wrap .categories .content .title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #363636;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+}
+.contain-wrap .categories .content .title span {
+  color: #ff7757;
+}
+.contain-wrap .categories .content .title-2 {
+  font-size: 22px;
+  color: #9a9a9a;
+  line-height: 28px;
+  text-align: center;
+}
+.contain-wrap .categories .content .service-container {
+  display: flex;
+  margin: 0 10%;
+  transition: 0.7s;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories .content .service-container {
+    margin: 0;
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  .contain-wrap .categories .content .service-container {
+    transform: translate(0); /* Reset the transform property for desktop */
+  }
+}
+.contain-wrap .categories .content .service-container i {
+  width: 100%;
+}
+.contain-wrap .categories .content .service-container .bi {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  color: #cd4c2d;
+}
+.contain-wrap .categories .content .service-container .bg-img-1 {
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service1.png");
+  width: 100%;
+  height: 233px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories .content .service-container .bg-img-1 {
+    width: 100vw;
+  }
+}
+.contain-wrap .categories .content .service-container .bg-img-2 {
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service2.png");
+  width: 100%;
+  height: 233px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories .content .service-container .bg-img-2 {
+    width: 100vw;
+  }
+}
+.contain-wrap .categories .content .service-container .bg-img-3 {
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service3.png");
+  width: 100%;
+  height: 233px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories .content .service-container .bg-img-3 {
+    width: 100vw;
+  }
+}
+.contain-wrap .categories .content .service-container .bg-img-4 {
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/service/service4.png");
+  width: 100%;
+  height: 233px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories .content .service-container .bg-img-4 {
+    width: 100vw;
+  }
+}
+.contain-wrap .categories .content .service-container .text {
+  padding: 15px;
+  height: 233px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.contain-wrap .categories .content .service-container .text span {
+  color: #cd4c2d;
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+.contain-wrap .categories .content .service-container .text p {
+  height: 50%;
+  text-align: center;
+  overflow: hidden; /* Ẩn phần vượt quá chiều cao tối đa */
+  text-overflow: ellipsis;
+}
+.contain-wrap .categories .content .next-prev-btn {
+  width: 100%;
+  gap: 2rem;
+  display: none;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contain-wrap .categories .content .next-prev-btn {
+    display: flex;
+  }
+}
+.contain-wrap .categories .content .next-prev-btn .bi {
+  font-size: 35px;
+  cursor: pointer;
+  gap: 15px;
+}
+.contain-wrap .adv-container {
+  display: flex;
+  gap: 30px;
+  margin: 10%;
+}
+@media (max-width: 768px) {
+  .contain-wrap .adv-container {
+    display: block;
+  }
+}
+.contain-wrap .adv-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .contain-wrap .adv-container img {
+    margin-bottom: 1rem;
+  }
+}
+.contain-wrap .help {
+  background-color: #76381e;
+}
+.contain-wrap .help .wrap {
+  display: flex;
+  margin: 0 10%;
+}
+@media (max-width: 768px) {
+  .contain-wrap .help .wrap {
+    display: block;
+  }
+}
+.contain-wrap .help .text {
+  text-align: left;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contain-wrap .help .text h2 {
+  color: white;
+  font-weight: 500 !important;
+  font-size: 30px;
+}
+.contain-wrap .help .text p {
+  color: #ffd6a6;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.contain-wrap .help .img img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+.contain-wrap .footer {
+  background-image: url("https://eticket.hueworldheritage.org.vn/images/vector/bg-section-5.png");
+  width: 100%;
+}
+.contain-wrap .footer .wrapper {
+  display: block;
+}
+.contain-wrap .footer .wrapper .wrap {
+  display: flex;
+  gap: 15px;
+  margin: 0 10%;
+  padding: 3rem 0;
+}
+@media (max-width: 768px) {
+  .contain-wrap .footer .wrapper .wrap {
+    display: block;
+  }
+}
+.contain-wrap .footer .wrapper .wrap .item {
+  display: block;
+  width: 25%;
+  line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .contain-wrap .footer .wrapper .wrap .item {
+    width: 100% !important;
+  }
+}
+.contain-wrap .footer .wrapper .wrap .item .wrap-inside {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.contain-wrap .footer .wrapper .wrap .item p {
+  color: #363636;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.contain-wrap .footer .wrapper .wrap .item a {
+  text-decoration: none;
+  color: #cd4c2d;
+}
+.contain-wrap .footer .wrapper .wrap .item img {
+  max-width: 100%;
+}
+.contain-wrap .footer .wrapper .wrap .item .icon {
+  display: flex;
+  gap: 10px;
+  color: #cd4c2d;
+}
+.contain-wrap .footer .wrapper .footer-bottom {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 16px;
+  padding-top: 10px;
+  margin: 0 10%;
+}
+.contain-wrap .footer .wrapper .footer-bottom .col-9 {
+  margin-bottom: 0;
+  color: #363636;
+  line-height: 1.8;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .contain-wrap .footer .wrapper .footer-bottom .col-9 {
+    width: 100%;
+  }
+}
+.contain-wrap .footer .wrapper .footer-bottom .col-3 {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .contain-wrap .footer .wrapper .footer-bottom .col-3 {
+    width: 100%;
+  }
+}
+.contain-wrap .footer .wrapper .footer-bottom .col-3 img {
+  max-width: 100%;
+  max-height: 44px;
+}/*# sourceMappingURL=style.css.map */
